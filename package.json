@@ -1,0 +1,31 @@
+{
+  "name": "obsidian-mgr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "start:dev": "nodemon",
+    "spaced-tm": "npm run start -- --spaced-tm",
+    "spaced-td": "npm run start -- --spaced-td",
+    "diary": "npm run start -- --diary",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Texot",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@types/yargs": "^15.0.5",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.3",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "moment": "^2.27.0",
+    "yargs": "^15.4.1"
+  },
+  "bin": {
+    "obsidian-mgr": "./build/index.js"
+  }
+}
